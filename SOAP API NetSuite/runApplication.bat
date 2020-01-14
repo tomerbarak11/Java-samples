@@ -1,0 +1,3 @@
+@ECHO OFF
+ECHO Building the application (it may take a while)...
+gradlew.bat --no-daemon --console=plain -q runApplication

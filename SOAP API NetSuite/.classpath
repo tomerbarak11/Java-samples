@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="lib" path="gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="lib/suitetalk-axis-proxy-v2019_2-1.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/suitetalk-client-common-1.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/suitetalk-client-v2019_2-2.0.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

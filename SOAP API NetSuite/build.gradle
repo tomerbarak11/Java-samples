@@ -1,0 +1,27 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'lib', includes: ['suitetalk-*0.jar'])
+    compile 'axis:axis:1.4'
+
+    runtime 'commons-httpclient:commons-httpclient:3.1'
+    runtime 'org.slf4j:log4j-over-slf4j:1.7.6'
+    runtime 'org.slf4j:slf4j-nop:1.7.25'
+
+    compileOnly 'com.google.code.findbugs:jsr305:3.0.1'
+}
+
+task runApplication(type: JavaExec) {
+    description "Builds and executes the sample application"
+
+    classpath = sourceSets.main.runtimeClasspath
+    main = "com.netsuite.webservices.samples.SampleApplication"
+    standardInput = System.in
+}
+
+
+
